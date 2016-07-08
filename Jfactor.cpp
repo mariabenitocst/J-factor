@@ -30,6 +30,19 @@ OUTPUT:
 
 HAVE TO EXPLAIN THE METHOD OF INTERPOLATION TABLES
 
+
+SELF-CONSISTENT:
+
+(A) Calore + JCAP use R0 = 8.5 kpc. In all my derivations from the rotation curve I use 
+    R0 = 8 kpc. The idea is that at the end of the day, we will study the dependence of the
+    results with the local velocity and galactocentric distance (e.g. v0 and R0)
+
+FUTURE TESTS:
+
+(A) Precision: total/relative errors
+(B) maximum s_max for which we saturate the integral. I am starting with a initial value 
+    of s_max = 200 kpc
+
 *****************************************************************************************/
 #include <cmath>
 #include <iostream>
@@ -172,9 +185,16 @@ return (l*pow(r, l))*2*result;
 ***************************************************/
 
 
-int main(){
-
+int main()
+{
+// INPUT PARAMETERS:
+double R0=8.  // (kpc)In Calore + JCAP 2015 uses R0=8.5 kpc. This is something I need to take 
+	      //into account in order to be self-consistent.
+double s_max= 200. // kpc			
+double alpha = 1.; double rho0 = 0.4;
+double rs = 20.;
 // Change degrees to radians :
 
 
-return 0;}
+return 0;
+}
