@@ -42,9 +42,10 @@ SELF-CONSISTENT:
 (A) Precision: total/relative errors
 (B) maximum s_max for which we saturate the integral. I am starting with a initial value 
     of s_max = 200 kpc
+(C) I obtain the same results for the average geometrical J-factor in 0904.3830
 
-:: Note:: It is important to notice that these tests of precision should be done for
-          each time I compute a J-factor value
+:: Note:: It is important to notice that tests (A) and (B) should be done each time 
+          the J-factor value is computed
 
 
 NOTE - ERRORS:
